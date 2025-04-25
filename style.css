@@ -395,3 +395,23 @@
             grid-template-columns: 1fr;
         }
     }
+	/* Message personnalisé pour le clic droit */
+        body::after {
+            content: "Désolé, le clic droit est désactivé sur ce site.";
+            position: fixed;
+            bottom: -100px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #ff6347;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            opacity: 0;
+            transition: all 0.3s ease;
+            z-index: 9999;
+        }
+        
+        body.show-message::after {
+            bottom: 20px;
+            opacity: 1;
+        }
