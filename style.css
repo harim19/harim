@@ -397,7 +397,7 @@
     }
 	/* Message personnalisé pour le clic droit */
         body::after {
-            content: "Désolé, le clic droit est désactivé sur ce site.";
+            content: "Désolé, le clic droit est bani site site.";
             position: fixed;
             bottom: -100px;
             left: 50%;
